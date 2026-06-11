@@ -14,7 +14,7 @@ const schema = {
   email: EMAIL,
   foundingDate: '1917',
   priceRange: '$$$',
-  image: `${SITE_URL}/images/hero.png`,
+  image: `${SITE_URL}/images/hero.jpeg`,
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Jl. Raya Golf Dago No.78',

@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero.png"
+          src="/images/hero.jpeg"
           alt="Dago Golf Course in the Bandung highlands"
           fill
           sizes="100vw"

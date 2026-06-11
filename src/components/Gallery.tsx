@@ -44,16 +44,14 @@ export default function Gallery({ images }: GalleryProps) {
 
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {images.map((img, i) => (
           <button
             key={img}
             type="button"
             onClick={() => setActive(i)}
             aria-label={`Open gallery image ${i + 1} of ${images.length}`}
-            className={`relative luxury-border border-gold/5 overflow-hidden group cursor-zoom-in focus-visible:border-gold ${
-              i % 7 === 0 || i % 7 === 5 ? 'md:col-span-2 md:row-span-2' : 'aspect-square'
-            }`}
+            className="relative aspect-square luxury-border border-gold/5 overflow-hidden group cursor-zoom-in focus-visible:border-gold"
           >
             <Image
               src={img}
