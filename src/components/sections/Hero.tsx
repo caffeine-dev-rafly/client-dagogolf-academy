@@ -22,7 +22,7 @@ export default function Hero() {
           ESTABLISHED 1917 • <span className="text-gold">BANDUNG</span>
         </p>
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold tracking-tighter text-onyx mb-12 leading-[0.85]">
-          DAGO GOLF <br /> <span className="font-light italic text-gold">HERITAGE</span>
+          DAGO GOLF <br /> <span className="font-light italic text-gold">ACADEMY</span>
         </h1>
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
           <a

@@ -26,7 +26,7 @@ export default function Logo() {
     <span className="inline-flex items-center gap-2.5">
       <Monogram />
       <span className="text-2xl font-serif font-bold tracking-tighter text-onyx leading-none">
-        DAGO<span className="font-light">GOLF</span>
+        DAGO<span className="font-light">GOLF</span><span className="font-light text-gold">ACADEMY</span>
       </span>
     </span>
   );

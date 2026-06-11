@@ -4,7 +4,7 @@
 export type Stat = { label: string; value: string };
 export type Feature = { title: string; desc: string; icon: 'award' | 'target' | 'users' | 'cpu' };
 export type Program = { title: string; desc: string; tags: string[]; img: string };
-export type Step = { step: string; title: string; desc: string };
+export type Step = { step: string; icon: string; title: string; desc: string };
 export type Review = { name: string; text: string };
 
 export type Coach = {
@@ -59,10 +59,30 @@ export const programs: Program[] = [
 ];
 
 export const curriculum: Step[] = [
-  { step: '01', title: 'Assessment', desc: 'Initial evaluation of physical capabilities and technical baseline.' },
-  { step: '02', title: 'Fundamentals', desc: 'Building a consistent, repeatable swing mechanic and grip.' },
-  { step: '03', title: 'Strategy', desc: 'Developing on-course decision making and course management.' },
-  { step: '04', title: 'Optimization', desc: 'Refining details through AI analysis and mental conditioning.' },
+  {
+    step: '01',
+    icon: '🔍',
+    title: 'Asesmen Awal',
+    desc: 'Evaluasi komprehensif terhadap level teknik, fisik, dan mental Anda untuk menyusun program latihan yang paling efektif.',
+  },
+  {
+    step: '02',
+    icon: '🏌️',
+    title: 'Pengembangan Teknik',
+    desc: 'Sesi latihan terstruktur mencakup grip, stance, backswing, downswing, dan follow-through dengan analisis video swing.',
+  },
+  {
+    step: '03',
+    icon: '🗺️',
+    title: 'Manajemen Lapangan',
+    desc: 'Belajar membaca lapangan, memilih stik, menghitung angin, dan mengembangkan strategi bermain 18 hole secara cerdas.',
+  },
+  {
+    step: '04',
+    icon: '🏆',
+    title: 'Mental & Kompetisi',
+    desc: 'Pengembangan ketangguhan mental, manajemen tekanan kompetisi, dan persiapan fisik untuk turnamen resmi.',
+  },
 ];
 
 export const coaches: Coach[] = [
