@@ -5,6 +5,8 @@
   --foreground: #111111;
   --platinum: #E5E4E2;
   --onyx: #111111;
+  --gold: #D4AF37;
+  --gold-muted: #B8860B;
 }
 
 @theme inline {
@@ -12,6 +14,8 @@
   --color-foreground: var(--foreground);
   --color-platinum: var(--platinum);
   --color-onyx: var(--onyx);
+  --color-gold: var(--gold);
+  --color-gold-muted: var(--gold-muted);
   
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-serif: 'Playfair Display', serif;
@@ -28,6 +32,10 @@ body {
 /* Luxury helper classes */
 .luxury-border {
   border: 1px solid var(--platinum);
+}
+
+.luxury-border-gold {
+  border: 1px solid var(--gold);
 }
 
 .luxury-text-gradient {
@@ -47,4 +55,8 @@ body {
 
 .animate-fade-in {
   animation: fadeIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.gold-hover-effect {
+  @apply transition-all duration-500 hover:text-gold hover:border-gold;
 }
