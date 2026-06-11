@@ -24,7 +24,21 @@ export default function Home() {
     '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.34.jpeg',
     '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.38 (1).jpeg',
     '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.38 (2).jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.38.jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.39 (1).jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.39 (2).jpeg',
     '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.39.jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.40 (1).jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.40 (2).jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.40.jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.41 (1).jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.41 (2).jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.41.jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.42 (1).jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-20 at 06.10.42.jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-21 at 12.15.58.jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-21 at 12.15.59.jpeg',
+    '/images/gallery/WhatsApp Image 2026-01-21 at 12.17.21.jpeg',
   ];
 
   return (
@@ -303,7 +317,7 @@ export default function Home() {
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
              {galleryImages.map((img, i) => (
-               <div key={i} className={`relative luxury-border border-gold/5 overflow-hidden group cursor-zoom-in ${i === 0 || i === 5 ? 'md:col-span-2 md:row-span-2' : 'aspect-square'}`}>
+               <div key={i} className={`relative luxury-border border-gold/5 overflow-hidden group cursor-zoom-in ${i % 7 === 0 || i % 7 === 5 ? 'md:col-span-2 md:row-span-2' : 'aspect-square'}`}>
                   <Image 
                     src={img} 
                     alt={`Gallery ${i}`} 
