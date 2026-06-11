@@ -35,9 +35,10 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/images/hero.jpg" 
+            src="/images/hero.png" 
             alt="Dago Golf Course" 
             fill 
+            sizes="100vw"
             className="object-cover opacity-60 grayscale"
             priority
           />
@@ -265,6 +266,7 @@ export default function Home() {
                     src={coach.img} 
                     alt={coach.name} 
                     fill 
+                    sizes="(max-width: 768px) 100vw, 256px"
                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                    />
                 </div>
@@ -306,6 +308,7 @@ export default function Home() {
                     src={img} 
                     alt={`Gallery ${i}`} 
                     fill 
+                    sizes="(max-width: 768px) 50vw, 25vw"
                     className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
                   />
                   <div className="absolute inset-0 bg-gold/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
