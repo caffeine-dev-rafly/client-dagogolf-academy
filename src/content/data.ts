@@ -48,13 +48,13 @@ export const programs: Program[] = [
     title: 'Junior Excellence',
     desc: 'A specialized program for young students to accelerate interest and talent from an early age.',
     tags: ['Talent Scouting', 'Fun Environment', 'Discipline'],
-    img: '/images/programs/junior-excellence.jpeg',
+    img: '/images/programs/junior-excellence-v2.jpeg',
   },
   {
     title: 'Professional Mastery',
     desc: 'Direct coaching from instructors covering everything from fundamentals to on-course strategy.',
     tags: ['Basic to Advanced', 'Strategic Play', '1-on-1 Pro'],
-    img: '/images/programs/professional-mastery.jpeg',
+    img: '/images/programs/professional-mastery-v2.jpeg',
   },
 ];
 
