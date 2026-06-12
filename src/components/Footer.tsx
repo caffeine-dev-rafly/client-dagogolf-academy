@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { MessageCircle, Mail, Phone, MapPin, Clock } from 'lucide-react';
-import { waLink, EMAIL, ADDRESS } from '@/lib/site';
+import { waLink, EMAIL, ADDRESS, OPENING_HOURS } from '@/lib/site';
 import Logo from '@/components/Logo';
 
 const Footer = () => {
@@ -15,7 +15,7 @@ const Footer = () => {
               <Logo />
             </Link>
             <p className="text-onyx/70 text-sm leading-relaxed mb-8 max-w-xs">
-              Elevation of performance, tradition, and exclusive golf heritage in the heart of Bandung.
+              Peningkatan performa, tradisi, dan warisan golf eksklusif di jantung kota Bandung.
             </p>
             <div className="flex space-x-4">
               <a
@@ -39,12 +39,18 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-[10px] uppercase tracking-widest font-bold mb-8">Navigation</h4>
+            <h4 className="text-[10px] uppercase tracking-widest font-bold mb-8">Navigasi</h4>
             <ul className="space-y-4">
-              {['Services', 'Programs', 'Curriculum', 'Coaches', 'Gallery'].map((item) => (
-                <li key={item}>
-                  <Link href={`#${item.toLowerCase()}`} className="text-xs text-onyx/70 hover:text-gold transition-colors">
-                    {item}
+              {[
+                { label: 'Layanan', id: 'services' },
+                { label: 'Program', id: 'programs' },
+                { label: 'Kurikulum', id: 'curriculum' },
+                { label: 'Pelatih', id: 'coaches' },
+                { label: 'Galeri', id: 'gallery' },
+              ].map((item) => (
+                <li key={item.id}>
+                  <Link href={`#${item.id}`} className="text-xs text-onyx/70 hover:text-gold transition-colors">
+                    {item.label}
                   </Link>
                 </li>
               ))}
@@ -53,7 +59,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="md:col-span-2">
-            <h4 className="text-[10px] uppercase tracking-widest font-bold mb-8">Establishment</h4>
+            <h4 className="text-[10px] uppercase tracking-widest font-bold mb-8">Lokasi</h4>
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <MapPin size={18} className="text-gold/60 shrink-0 mt-0.5" />
@@ -61,7 +67,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-4">
                 <Clock size={18} className="text-gold/60 shrink-0" />
-                <span className="text-xs text-onyx/70">Tue - Sun: 07:00 - 21:00</span>
+                <span className="text-xs text-onyx/70">Setiap Hari: {OPENING_HOURS}</span>
               </div>
               <a
                 href={waLink()}
@@ -79,10 +85,10 @@ const Footer = () => {
         </div>
 
         <div className="pt-12 border-t border-platinum flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] text-onyx/50 space-y-4 md:space-y-0">
-          <p>© 2026 DAGO GOLF ACADEMY. ALL RIGHTS RESERVED.</p>
+          <p>© 2026 DAGO GOLF ACADEMY. HAK CIPTA DILINDUNGI.</p>
           <div className="flex space-x-8">
-            <Link href="#" className="hover:text-onyx transition-colors">Privacy</Link>
-            <Link href="#" className="hover:text-onyx transition-colors">Terms</Link>
+            <Link href="#" className="hover:text-onyx transition-colors">Privasi</Link>
+            <Link href="#" className="hover:text-onyx transition-colors">Syarat & Ketentuan</Link>
           </div>
         </div>
       </div>

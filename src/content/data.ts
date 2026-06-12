@@ -21,39 +21,39 @@ export type Coach = {
 };
 
 export const stats: Stat[] = [
-  { label: 'Years Heritage', value: '100+' },
-  { label: 'Students Trained', value: '500+' },
-  { label: 'Tournament Titles', value: '10+' },
-  { label: 'Certifications', value: 'PGA ID' },
+  { label: 'Tahun Warisan', value: '100+' },
+  { label: 'Siswa Terlatih', value: '500+' },
+  { label: 'Gelar Turnamen', value: '10+' },
+  { label: 'Sertifikasi', value: 'PGA ID' },
 ];
 
 export const features: Feature[] = [
-  { title: 'Elite Facility', icon: 'award', desc: 'A structured, private environment designed for comprehensive golf development in the cool Bandung highlands.' },
-  { title: 'Technical Precision', icon: 'target', desc: 'Diverse training activities tailored to your specific skill level, ensuring focused improvement.' },
-  { title: 'Master Coaching', icon: 'users', desc: 'Direct guidance from seasoned professionals who combine tradition with modern biomechanics.' },
-  { title: 'AI Integration', icon: 'cpu', desc: 'Leveraging cutting-edge analysis technology to refine every aspect of your swing with surgical precision.' },
+  { title: 'Fasilitas Elit', icon: 'award', desc: 'Lingkungan privat terstruktur yang dirancang untuk pengembangan golf komprehensif di dataran tinggi Bandung yang sejuk.' },
+  { title: 'Presisi Teknis', icon: 'target', desc: 'Beragam aktivitas pelatihan yang disesuaikan dengan tingkat keahlian spesifik Anda, memastikan peningkatan yang terfokus.' },
+  { title: 'Pelatih Ahli', icon: 'users', desc: 'Bimbingan langsung dari para profesional berpengalaman yang memadukan tradisi dengan biomekanik modern.' },
+  { title: 'Integrasi AI', icon: 'cpu', desc: 'Memanfaatkan teknologi analisis mutakhir untuk menyempurnakan setiap aspek ayunan Anda dengan presisi bedah.' },
 ];
 
 export const services: string[] = [
-  'Individual & Group Training',
-  'Advanced Swing Analysis',
-  'Expert Strategy Consultation',
-  'Custom Training Programs',
-  'Tournament Preparation',
-  'AI Performance Tracking',
+  'Pelatihan Individu & Grup',
+  'Analisis Swing Lanjutan',
+  'Konsultasi Strategi Ahli',
+  'Program Latihan Kustom',
+  'Persiapan Turnamen',
+  'Pelacakan Performa AI',
 ];
 
 export const programs: Program[] = [
   {
     title: 'Junior Excellence',
-    desc: 'A specialized program for young students to accelerate interest and talent from an early age.',
-    tags: ['Talent Scouting', 'Fun Environment', 'Discipline'],
+    desc: 'Program khusus bagi siswa muda untuk mempercepat minat dan bakat sejak usia dini.',
+    tags: ['Pencarian Bakat', 'Lingkungan Menyenangkan', 'Disiplin'],
     img: '/images/programs/junior-excellence-v2.jpeg',
   },
   {
     title: 'Professional Mastery',
-    desc: 'Direct coaching from instructors covering everything from fundamentals to on-course strategy.',
-    tags: ['Basic to Advanced', 'Strategic Play', '1-on-1 Pro'],
+    desc: 'Pelatihan langsung dari instruktur yang mencakup segalanya mulai dari dasar-dasar hingga strategi di lapangan.',
+    tags: ['Dasar hingga Lanjutan', 'Permainan Strategis', 'Pro 1-on-1'],
     img: '/images/programs/professional-mastery-v2.jpeg',
   },
 ];
@@ -89,33 +89,33 @@ export const coaches: Coach[] = [
   {
     name: 'Dr. Aep',
     role: 'Head Professional',
-    exp: '15+ Years',
+    exp: '15+ Tahun',
     img: '/images/aep.jpg',
-    tagline: 'Turning fundamentals into instinct — one deliberate swing at a time.',
-    specialties: ['Swing Biomechanics', 'Mental Game', 'Tournament Prep'],
+    tagline: 'Mengubah dasar-dasar menjadi insting — satu ayunan terukur setiap saat.',
+    specialties: ['Biomekanik Swing', 'Permainan Mental', 'Persiapan Turnamen'],
     stats: [
-      { label: 'Experience', value: '15+ yrs' },
-      { label: 'Students', value: '300+' },
+      { label: 'Pengalaman', value: '15+ thn' },
+      { label: 'Siswa', value: '300+' },
     ],
   },
   {
     name: 'Anjas',
     role: 'Senior Coach',
-    exp: '10+ Years',
+    exp: '10+ Tahun',
     img: '/images/anjas.jpg',
-    tagline: 'Precision in the short game is where rounds are truly won.',
-    specialties: ['Short Game', 'Course Strategy', 'Junior Development'],
+    tagline: 'Presisi dalam permainan pendek adalah kunci kemenangan yang sesungguhnya.',
+    specialties: ['Short Game', 'Strategi Lapangan', 'Pengembangan Junior'],
     stats: [
-      { label: 'Experience', value: '10+ yrs' },
-      { label: 'Students', value: '200+' },
+      { label: 'Pengalaman', value: '10+ thn' },
+      { label: 'Siswa', value: '200+' },
     ],
   },
 ];
 
 export const reviews: Review[] = [
-  { name: 'Andini', text: 'The AI analysis completely changed how I approach my swing. Truly a world-class facility.' },
-  { name: 'Budi', text: "Heritage meets modern coaching. Dr. Aep's guidance is unparalleled in West Java." },
-  { name: 'Sarah', text: 'The junior program is exceptional. My son has developed both skill and discipline.' },
+  { name: 'Andini', text: 'Analisis AI benar-benar mengubah cara saya melakukan swing. Fasilitas kelas dunia.' },
+  { name: 'Budi', text: "Warisan bertemu pelatihan modern. Bimbingan Dr. Aep tidak tertandingi di Jawa Barat." },
+  { name: 'Sarah', text: 'Program juniornya luar biasa. Anak saya mengembangkan keahlian dan disiplin.' },
 ];
 
 export const galleryImages: string[] = [

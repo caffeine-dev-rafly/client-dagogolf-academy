@@ -17,15 +17,14 @@ export default function Coaches() {
         <Reveal className="max-w-3xl mb-24">
           <div className="flex items-center gap-4 mb-6">
             <span className="h-[1px] w-12 bg-gold" />
-            <p className="text-[11px] uppercase tracking-[0.5em] text-gold font-bold">Expert Instructors</p>
+            <p className="text-[11px] uppercase tracking-[0.5em] text-gold font-bold">Instruktur Ahli</p>
           </div>
           <h2 className="text-5xl md:text-7xl font-serif font-bold text-onyx leading-[0.9] tracking-tight">
-            The Minds Behind <br />
-            <span className="font-light italic text-gold">the Mastery</span>
+            Sosok di Balik <br />
+            <span className="font-light italic text-gold">Kemahiran Anda</span>
           </h2>
           <p className="mt-8 text-onyx/60 text-base leading-relaxed max-w-xl">
-            Decades of tournament pedigree, distilled into a coaching method that pairs timeless
-            fundamentals with modern, data-driven precision.
+            Puluhan tahun pengalaman turnamen, dirumuskan menjadi metode pelatihan yang memadukan dasar-dasar abadi dengan presisi modern berbasis data.
           </p>
         </Reveal>
 
@@ -109,7 +108,7 @@ export default function Coaches() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 bg-onyx text-white px-8 py-4 text-[11px] uppercase tracking-widest font-bold hover:bg-gold transition-all duration-500 shadow-lg group/btn"
                     >
-                      Book a Session with {coach.name}
+                      Booking Sesi dengan {coach.name}
                       <ArrowUpRight size={16} className="group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                     </a>
                   </div>

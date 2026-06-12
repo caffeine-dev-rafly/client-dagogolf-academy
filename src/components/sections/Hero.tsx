@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero.jpeg"
-          alt="Dago Golf Course in the Bandung highlands"
+          alt="Lapangan Dago Golf di dataran tinggi Bandung"
           fill
           sizes="100vw"
           className="object-cover opacity-60 grayscale"
@@ -19,7 +19,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
         <p className="text-[11px] uppercase tracking-[0.5em] text-onyx/80 mb-8 animate-fade-in font-bold">
-          ESTABLISHED 1917 • <span className="text-gold">BANDUNG</span>
+          BERDIRI SEJAK 1917 • <span className="text-gold">BANDUNG</span>
         </p>
         <h1 className="text-6xl md:text-8xl lg:text-9xl font-serif font-bold tracking-tighter text-onyx mb-12 leading-[0.85]">
           DAGO GOLF <br /> <span className="font-light italic text-gold">ACADEMY</span>
@@ -29,14 +29,14 @@ export default function Hero() {
             href="#contact"
             className="bg-onyx text-white px-12 py-5 text-xs uppercase tracking-widest hover:bg-gold transition-all duration-500 flex items-center group shadow-xl"
           >
-            Begin Training
+            Mulai Berlatih
             <ArrowRight size={16} className="ml-2 group-hover:translate-x-1 transition-transform" />
           </a>
           <a
             href="#curriculum"
             className="luxury-border text-onyx px-12 py-5 text-xs uppercase tracking-widest hover:border-gold hover:text-gold transition-all duration-500"
           >
-            Explore Heritage
+            Jelajahi Warisan
           </a>
         </div>
       </div>

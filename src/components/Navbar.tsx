@@ -7,12 +7,12 @@ import { waLink } from '@/lib/site';
 import Logo from '@/components/Logo';
 
 const navLinks = [
-  { name: 'Services', href: '#services' },
-  { name: 'Programs', href: '#programs' },
-  { name: 'Curriculum', href: '#curriculum' },
-  { name: 'Coaches', href: '#coaches' },
-  { name: 'Gallery', href: '#gallery' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Layanan', href: '#services' },
+  { name: 'Program', href: '#programs' },
+  { name: 'Kurikulum', href: '#curriculum' },
+  { name: 'Pelatih', href: '#coaches' },
+  { name: 'Galeri', href: '#gallery' },
+  { name: 'Kontak', href: '#contact' },
 ];
 
 const Navbar = () => {
@@ -59,7 +59,7 @@ const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <Link href="/" aria-label="Dago Golf home">
+        <Link href="/" aria-label="Beranda Dago Golf">
           <Logo />
         </Link>
 
@@ -83,7 +83,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="bg-onyx text-white px-6 py-2 text-[10px] uppercase tracking-widest hover:bg-gold transition-all"
           >
-            Book Now
+            Booking Sekarang
           </a>
         </div>
 
@@ -91,7 +91,7 @@ const Navbar = () => {
         <button
           className="md:hidden text-onyx"
           onClick={() => setIsOpen(!isOpen)}
-          aria-label={isOpen ? 'Close menu' : 'Open menu'}
+          aria-label={isOpen ? 'Tutup menu' : 'Buka menu'}
           aria-expanded={isOpen}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -121,7 +121,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
             className="bg-onyx text-white w-full py-3 text-[10px] uppercase tracking-widest text-center hover:bg-gold transition-all"
           >
-            Book Now
+            Booking Sekarang
           </a>
         </div>
       )}

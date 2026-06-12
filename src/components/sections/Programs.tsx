@@ -13,11 +13,11 @@ export default function Programs() {
           <Reveal direction="right" className="max-w-xl">
             <div className="flex items-center gap-4 mb-6">
               <span className="h-[1px] w-12 bg-gold" />
-              <p className="text-[11px] uppercase tracking-[0.4em] text-gold font-bold">Select Programs</p>
+              <p className="text-[11px] uppercase tracking-[0.4em] text-gold font-bold">Pilihan Program</p>
             </div>
-            <h2 className="text-5xl font-serif font-bold text-onyx mb-6">Tailored Performance</h2>
+            <h2 className="text-5xl font-serif font-bold text-onyx mb-6">Performa Terukur</h2>
             <p className="text-onyx/70 text-sm leading-relaxed">
-              Flagship curricula designed to accelerate skill acquisition and mastery.
+              Kurikulum unggulan yang dirancang untuk mempercepat penguasaan keahlian dan kemahiran.
             </p>
           </Reveal>
           <a
@@ -26,7 +26,7 @@ export default function Programs() {
             rel="noopener noreferrer"
             className="text-xs uppercase tracking-widest border-b border-gold pb-2 text-gold hover:text-onyx hover:border-onyx transition-all whitespace-nowrap"
           >
-            View All Programs
+            Lihat Semua Program
           </a>
         </div>
 
@@ -66,7 +66,7 @@ export default function Programs() {
                       {prog.title}
                     </h3>
                     <span className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-widest font-bold text-gold">
-                      Explore Program
+                      Jelajahi Program
                       <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </span>
                   </div>

@@ -8,7 +8,7 @@ const schema = {
   '@type': 'SportsActivityLocation',
   name: 'Dago Golf Academy',
   description:
-    'Historic golf academy in the Bandung highlands offering elite coaching, junior programs, and AI-driven swing analysis.',
+    'Akademi golf bersejarah di dataran tinggi Bandung yang menawarkan pelatihan elit, program junior, dan analisis swing berbasis AI.',
   url: SITE_URL,
   telephone: '+62-851-7509-0700',
   email: EMAIL,
@@ -17,10 +17,11 @@ const schema = {
   image: `${SITE_URL}/images/hero.jpeg`,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Jl. Raya Golf Dago No.78',
+    streetAddress: 'Dago heritage 1917, Jl. Cigadung Raya Barat No.5, RT.05/RW.02, Cigadung, Kec. Cibeunying Kaler',
     addressLocality: 'Bandung',
-    addressRegion: 'West Java',
+    addressRegion: 'Jawa Barat',
     addressCountry: 'ID',
+    postalCode: '40191',
   },
   geo: {
     '@type': 'GeoCoordinates',
@@ -29,9 +30,17 @@ const schema = {
   },
   openingHoursSpecification: {
     '@type': 'OpeningHoursSpecification',
-    dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
-    opens: '07:00',
-    closes: '21:00',
+    dayOfWeek: [
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+      'Sunday',
+    ],
+    opens: '08:00',
+    closes: '16:00',
   },
   sameAs: [] as string[],
 };

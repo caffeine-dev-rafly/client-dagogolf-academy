@@ -17,24 +17,24 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Dago Golf Academy | Heritage Golf Coaching in Bandung",
+    default: "Dago Golf Academy | Pelatihan Golf Warisan di Bandung",
     template: "%s | Dago Golf Academy",
   },
   description:
-    "Established 1917 in the Bandung highlands. Elite golf coaching, junior programs, and AI-driven swing analysis at Dago Golf Academy, West Java.",
+    "Berdiri sejak 1917 di dataran tinggi Bandung. Pelatihan golf elit, program junior, dan analisis swing berbasis AI di Dago Golf Academy, Jawa Barat.",
   keywords: [
     "Dago Golf",
-    "golf academy Bandung",
-    "golf coaching West Java",
-    "junior golf Indonesia",
-    "swing analysis",
-    "golf lessons Bandung",
+    "akademi golf Bandung",
+    "pelatihan golf Jawa Barat",
+    "golf junior Indonesia",
+    "analisis swing",
+    "les golf Bandung",
   ],
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Dago Golf Academy | Heritage Golf Coaching in Bandung",
+    title: "Dago Golf Academy | Pelatihan Golf Warisan di Bandung",
     description:
-      "Elite golf coaching, junior programs, and AI-driven swing analysis in the historic Bandung highlands since 1917.",
+      "Pelatihan golf elit, program junior, dan analisis swing berbasis AI di dataran tinggi Bandung yang bersejarah sejak 1917.",
     url: SITE_URL,
     siteName: "Dago Golf Academy",
     locale: "id_ID",
@@ -44,15 +44,15 @@ export const metadata: Metadata = {
         url: "/images/hero.jpeg",
         width: 1200,
         height: 630,
-        alt: "Dago Golf Academy course in the Bandung highlands",
+        alt: "Lapangan Dago Golf Academy di dataran tinggi Bandung",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dago Golf Academy | Heritage Golf Coaching in Bandung",
+    title: "Dago Golf Academy | Pelatihan Golf Warisan di Bandung",
     description:
-      "Elite golf coaching and AI swing analysis in the historic Bandung highlands since 1917.",
+      "Pelatihan golf elit dan analisis swing AI di dataran tinggi Bandung yang bersejarah sejak 1917.",
     images: ["/images/hero.jpeg"],
   },
   robots: { index: true, follow: true },
@@ -64,7 +64,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
+    <html lang="id" className={`${inter.variable} ${playfair.variable}`} suppressHydrationWarning>
       <body className="antialiased bg-background text-foreground" suppressHydrationWarning>
         <JsonLd />
         {children}

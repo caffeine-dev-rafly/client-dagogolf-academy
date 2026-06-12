@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { MessageCircle, CheckCircle2, RotateCcw } from 'lucide-react';
 import { waLink } from '@/lib/site';
 
-const subjects = ['Junior Program', 'Private Session', 'AI Analysis', 'Tournament Prep'];
+const subjects = ['Program Junior', 'Sesi Privat', 'Analisis AI', 'Persiapan Turnamen'];
 
 const fieldBase =
   'peer w-full bg-transparent border-b border-white/20 py-3 text-sm text-white outline-none ' +
@@ -33,7 +33,7 @@ export default function ContactForm() {
       `Email: ${email || '-'}`,
       `Topik: ${subject}`,
       '',
-      message || '(no message)',
+      message || '(tidak ada pesan)',
     ].join('\n');
     window.open(waLink(text), '_blank', 'noopener,noreferrer');
     setSent(true);
@@ -54,8 +54,8 @@ export default function ContactForm() {
       <span className="absolute bottom-0 right-0 h-6 w-6 border-b-2 border-r-2 border-gold/60" />
 
       <div className="mb-10">
-        <p className="text-[11px] uppercase tracking-[0.4em] text-gold font-bold mb-2">Send an Inquiry</p>
-        <p className="text-sm text-white/50">Tell us your goals — we usually reply within a few hours.</p>
+        <p className="text-[11px] uppercase tracking-[0.4em] text-gold font-bold mb-2">Kirim Pertanyaan</p>
+        <p className="text-sm text-white/50">Beri tahu kami tujuan Anda — kami biasanya membalas dalam beberapa jam.</p>
       </div>
 
       <AnimatePresence mode="wait">
@@ -70,16 +70,16 @@ export default function ContactForm() {
             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gold/15 text-gold">
               <CheckCircle2 size={32} />
             </div>
-            <h3 className="text-2xl font-serif font-bold text-white mb-3">WhatsApp Opened</h3>
+            <h3 className="text-2xl font-serif font-bold text-white mb-3">WhatsApp Terbuka</h3>
             <p className="text-sm text-white/60 max-w-xs mx-auto mb-8">
-              We&rsquo;ve prefilled your message — just press send in WhatsApp to reach the academy directly.
+              Kami telah mengisi pesan Anda — cukup tekan kirim di WhatsApp untuk menghubungi akademi secara langsung.
             </p>
             <button
               type="button"
               onClick={reset}
               className="inline-flex items-center gap-2 text-[11px] uppercase tracking-widest font-bold text-gold hover:text-white transition-colors"
             >
-              <RotateCcw size={14} /> Send another inquiry
+              <RotateCcw size={14} /> Kirim pertanyaan lain
             </button>
           </motion.div>
         ) : (
@@ -97,13 +97,13 @@ export default function ContactForm() {
                 id="cf-name"
                 type="text"
                 required
-                placeholder="Full Name"
+                placeholder="Nama Lengkap"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 className={fieldBase}
               />
               <label htmlFor="cf-name" className={labelBase}>
-                Full Name
+                Nama Lengkap
               </label>
             </div>
 
@@ -113,19 +113,19 @@ export default function ContactForm() {
                 id="cf-email"
                 type="email"
                 required
-                placeholder="Email Address"
+                placeholder="Alamat Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className={fieldBase}
               />
               <label htmlFor="cf-email" className={labelBase}>
-                Email Address
+                Alamat Email
               </label>
             </div>
 
             {/* Subject — segmented selector instead of a default dropdown */}
             <div>
-              <p className="text-[10px] uppercase tracking-widest text-gold font-bold mb-3">I&rsquo;m interested in</p>
+              <p className="text-[10px] uppercase tracking-widest text-gold font-bold mb-3">Saya tertarik pada</p>
               <div className="flex flex-wrap gap-2.5">
                 {subjects.map((s) => {
                   const selected = subject === s;
@@ -153,13 +153,13 @@ export default function ContactForm() {
               <textarea
                 id="cf-message"
                 rows={4}
-                placeholder="Message"
+                placeholder="Pesan"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 className={`${fieldBase} resize-none`}
               />
               <label htmlFor="cf-message" className={labelBase}>
-                Your Message
+                Pesan Anda
               </label>
             </div>
 
@@ -168,11 +168,11 @@ export default function ContactForm() {
               className="group flex w-full items-center justify-center gap-2 bg-gold text-onyx py-5 text-xs uppercase tracking-widest font-bold hover:bg-white transition-all duration-500 shadow-xl"
             >
               <MessageCircle size={16} />
-              Send via WhatsApp
+              Kirim via WhatsApp
             </button>
 
             <p className="text-center text-[10px] text-white/30 tracking-wide">
-              Opens WhatsApp with your details prefilled. No spam, ever.
+              Membuka WhatsApp dengan detail yang sudah terisi. Tanpa spam.
             </p>
           </motion.form>
         )}
